@@ -1,0 +1,9 @@
+/* pages/exercise/exercise.wxss */
+.exer_container{
+  padding:40rpx;
+  text-align: center
+}
+image {
+  width: 640rpx;
+  height: 300rpx;
+}

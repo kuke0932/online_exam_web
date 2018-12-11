@@ -1,0 +1,39 @@
+<!--pages/simulate/grade/grade.wxml-->
+<view class='grade_container'>
+  <view class='grade_detail'>
+    <image mode="widthFix" style='width:100%;' src='/images/result.png'></image>
+    <text class='result'>考试结果</text>
+    <view class='rank'>排名<view class='rank_number'>{{grade.rank}}</view></view>
+    <view class='score'>{{grade.score}}<text class='ret'>分</text></view>
+    <view class='time'><text class='time_name'>用时：</text>{{grade.time}}</view>
+    <view class='go_back' bindtap='goBack'>返回首页</view>
+  </view>
+  <!-- <view class='other_detail'>
+    <view class="weui-flex">
+      <view class="weui-flex__item">
+        <view>
+          <navigator style='font-weight: bold'>查看错题</navigator>
+          <view>作对{{grade.right}}，作错{{grade.wrong}}题</view>
+        </view>
+      </view>
+      <view class="weui-flex__item">
+        <view>
+          <navigator style='font-weight: bold'>重新考试</navigator>
+          <view>不满意成绩，继续？</view>
+        </view>
+      </view>
+    </view>
+    <view class="weui-flex">
+      <view class="weui-flex__item">
+        <view>
+          <navigator style='font-weight: bold'>回顾试卷</navigator>
+          <view>温故而知新哦！</view>
+        </view>
+      </view>
+      <view class="weui-flex__item">
+        <view>
+        </view>
+      </view>
+    </view>
+  </view> -->
+</view>

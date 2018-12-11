@@ -1,0 +1,36 @@
+/* pages/mine/score/score.wxss */
+.score_container{
+  font-size: 30rpx;
+  padding: 20rpx;
+}
+.content {
+  margin-top: 20rpx;
+}
+.title {
+  padding: 10rpx;
+  background-color: #1396F1;
+  color: #fff;
+  line-height: 35rpx;
+  font-size: 32rpx;
+}
+.title image {
+  width: 25rpx;
+  height: 25rpx;
+}
+.desc{
+  padding:15rpx;
+  text-align: justify;
+  color: #666;
+  font-size: 32rpx;
+}
+.time{
+  padding: 5rpx;
+  line-height: 30rpx;
+  text-align: center;
+  background-color: #75C6FE;
+  font-size: 22rpx; 
+  color: #fff;
+}
+.time .time_left {
+  border-right: 2rpx solid #fff;
+}

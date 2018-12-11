@@ -1,0 +1,66 @@
+/* pages/simulate/grade/grade.wxss */
+.grade_container{
+  padding: 20rpx;
+}
+.grade_detail {
+  position: relative;
+}
+.grade_detail .result {
+  position: absolute;
+  top:19rpx;
+  left:20rpx;
+  font-size:28rpx;
+  color:#fff;
+  font-weight:bold;
+}
+.grade_detail .rank {
+  position: absolute;
+  top: 12rpx;
+  right: 63rpx;
+  width: 60rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 26rpx;
+}
+.grade_detail .rank .rank_number {
+  color: #C7170F;
+  font-weight: bold;
+}
+.grade_detail .score {
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  width: 300rpx;
+  transform: translate(-150rpx, 0);
+  text-align: center;
+  color: #CF2612;
+  font-size: 62rpx;
+  font-weight: bold;
+}
+.grade_detail .score .ret {
+  font-size: 28rpx;
+}
+.grade_detail .time {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  width: 400rpx;
+  transform: translate(-200rpx, 0);
+  text-align: center;
+  color: #666;
+  font-size: 30rpx;
+}
+.grade_detail .time .time_name {
+  color: #E4A86F;
+}
+.grade_detail .go_back {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  width: 300rpx;
+  transform: translate(-150rpx, 0);
+  text-align: center;
+  color: #2CA0F0;
+  font-size: 28rpx;
+  text-decoration:underline;
+}

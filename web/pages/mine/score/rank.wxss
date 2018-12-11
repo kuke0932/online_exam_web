@@ -1,0 +1,27 @@
+/* pages/mine/score/rank.wxss */
+.rank_container {
+  padding: 20rpx;
+}
+.rankList{
+  background-color: #fff;
+  color: #1396F1;
+  font-size: 32rpx;
+}
+.rankItem{
+  text-align: center;
+  padding: 20rpx 0;
+  border-bottom: 2rpx dashed #ddd;
+}
+.rankItem .name {
+  border-right: 3rpx solid #1396F1;
+}
+.rankItem .score {
+  border-right: 3rpx solid #1396F1;
+}
+.rankItem .rank {
+  font-size: 24rpx;
+}
+.rankItem .rank .number{
+  font-style: italic;
+  font-size: 32rpx;
+}

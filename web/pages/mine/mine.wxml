@@ -1,0 +1,45 @@
+<view>
+  <view class="weui-panel weui-panel_access" wx:if="{{logined}}">
+    <view class="weui-panel__bd">
+      <view class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <image class="weui-media-box__thumb" src="{{mineInfro.imgUrl}}" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title">{{mineInfro.name}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+   <view class="weui-panel weui-panel_access" wx:if="{{!logined}}">
+    <view class="weui-panel__bd">
+      <view class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <navigator url='/pages/login/login' open-type='redirectTo' >
+          <view class="weui-media-box__title">登录</view>
+          </navigator> 
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='myInfro'>
+    <view class="weui-cells weui-cells_after-title">
+      <navigator wx:if="{{logined}}" url="changePwd/changePwd" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">修改密码</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </navigator>
+      <navigator wx:if="{{logined}}" url="score/score" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">成绩查询与排行</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </navigator>
+      <navigator url="questions/questions" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">帮助与反馈</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </navigator>
+      <view  wx:if="{{logined}}" class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap='logout'>
+        <view class="weui-cell__bd">退出登录</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </view>
+    </view>
+  </view>
+</view>

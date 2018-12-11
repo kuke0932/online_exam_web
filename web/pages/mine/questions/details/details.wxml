@@ -1,0 +1,25 @@
+<!--pages/mine/questions/details/details.wxml-->
+<view class='details_container'>
+  <view wx:if="{{from == 1}}" class='search_exam'>
+    <view class='text'>1.首页中点击 --> 我的</view>
+    <image src='/images/details1.jpg'></image>
+    <view class='text'>2.我的中点击 --> 成绩查询与排行</view>
+    <image src='/images/details2.png'></image>
+    <view class='text'>3.成绩查询与排行中点击成绩列表即可查看排行</view>
+    <image src='/images/details3.png'></image>
+  </view>
+   <view wx:if="{{from == 2}}" class='exam_info'>
+    <view>1. 题目类型</view>
+    <view>
+      考试分为单选题、多选题和判断题。单选题、判断题选中后可更改选项，多选题点击确认答案按钮之前可更改选项，确认答案后不可更改。
+    </view>
+    <view>2. 考试时间</view>
+    <view>
+      考试时间为60分钟，所有题目答完确认无误后可以提前提交考试。考试时间到，将自动提交。不可继续作答。考试中途退出，也将自动提交，不可继续作答。
+    </view>
+    <view>3. 考试相关</view>
+    <view>
+      每人每次考试只能答题一次，答过不可重复答题
+    </view>
+  </view>
+</view>

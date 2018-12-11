@@ -1,0 +1,94 @@
+/**index.wxss**/
+.index_container{
+  padding-bottom: 20rpx;
+}
+.app {
+  display: inline;
+}
+.flex-wrp{
+  line-height: 180rpx;
+  text-align: center;
+}
+.flex-item{
+  width: 25%;
+  display: inline-block;
+  padding:30rpx 0 0 0;
+  background: #EDF8FE;
+}
+.title {
+  font-size:35rpx;
+  line-height: 80rpx;
+}
+.img_box{
+  border-radius: 50%;
+  width:120rpx;
+  height:120rpx;
+  line-height: 145rpx;
+  margin-left: 35rpx;
+}
+.img_icon{
+  width: 60rpx;
+  height: 60rpx;
+}
+
+/* 通知公告 */
+.notice {
+  background-color: #fff;
+  padding: 20rpx;
+  line-height: 48rpx;
+  margin-top: -40rpx;
+}
+.notice .notice_left {
+  width: 100rpx;
+  font-size: 26rpx;
+  font-weight: 600;
+  color: #1396F1;
+}
+.notice .notice_left image {
+  width: 40rpx;
+  height: 66rpx;
+  vertical-align: middle
+}
+.notice .notice_right{
+  font-size: 30rpx;
+  line-height: 0.9rem; 
+  margin-left: 40rpx;
+  padding-right: 30rpx;
+}
+
+/* infor */
+.infor {
+  position: relative;
+  margin-top: 50rpx;
+}
+.infor .title {
+  position: absolute;
+  top: -30rpx;
+  left: 20rpx;
+  padding: 0 10rpx;
+  color: #fff;
+  background-color: #1396F1;
+  border-radius: 8rpx;
+  height:60rpx;
+  line-height:60rpx;
+}
+.infor .body {
+  padding: 10rpx 20rpx 40rpx 20rpx;
+  background: #fff;
+}
+.infor .body .more {
+  text-align: right;
+  color: #1396F1;
+  font-size: 28rpx;
+}
+.infor .body .body_item {
+  font-size: 31rpx;
+  padding: 20rpx 0;
+  border-bottom: 1rpx dashed #ddd;
+}
+.infor .body .body_item image {
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: sub;
+  margin-right: 15rpx;
+}

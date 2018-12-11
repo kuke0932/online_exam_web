@@ -1,0 +1,14 @@
+/* pages/mine/mine.wxss */
+.weui-panel__bd{
+  padding: 20rpx 0;
+}
+.weui-media-box__hd_in-appmsg{
+  border-radius: 50%;
+  overflow: hidden;
+  width: 125rpx;
+  height: 125rpx;
+  line-height: 180rpx;
+}
+.myInfro{
+  margin-top: 20rpx;
+}

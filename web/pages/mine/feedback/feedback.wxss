@@ -1,0 +1,9 @@
+/* pages/mine/feedback/feedback.wxss */
+.qex_box{
+  position: relative;
+  padding-top: 80rpx; 
+}
+.qes_desc{
+  position: absolute;
+  top:16rpx;
+}

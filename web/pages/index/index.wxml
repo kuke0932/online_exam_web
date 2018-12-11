@@ -1,0 +1,107 @@
+<!--index.wxml-->
+<view class="index_container">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height:400rpx">
+    <block wx:for="{{imgUrls}}" wx:key="{{value}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="200" style="display:inline" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="flex-wrp">
+    <navigator class='app' url="../exercise/exercise" bindtap='goExercise'>
+      <view class="flex-item">
+        <view class='img_box' style="background-color: #89c47d">
+          <image class='img_icon' src="/images/icon/report.svg"></image>
+        </view>
+        <view class='title'>考题练习</view>
+      </view>
+    </navigator>
+    <navigator class='app' url='../simulate/simulate' bindtap='goSimulate'>
+      <view class="flex-item">
+        <view class='img_box' style="background-color: #f0a45d">
+          <image class='img_icon' src="/images/icon/daily.svg"></image>
+        </view>
+        <view class='title'>模拟考试</view>
+      </view>
+    </navigator>
+    <navigator class='app' url='/pages/exam/exam' bindtap='goExam'>
+      <view class="flex-item">
+        <view class='img_box' style="background-color: #f3bc33">
+          <image class='img_icon' src="/images/icon/document.svg"></image>
+        </view>
+        <view class='title'>正式考试</view>
+      </view>
+    </navigator>
+    <navigator class='app' url='/pages/mine/mine' open-type='switchTab'>
+      <view class="flex-item">
+        <view class='img_box' style="background-color: #e86150">
+          <image class='img_icon' src="/images/icon/home.svg"></image>
+        </view>
+        <view class='title'>我的资料</view>
+      </view>
+    </navigator>
+  </view>
+
+  <!-- 通知 -->
+  <!-- <view class="weui-flex notice">
+    <view class='notice_left'>
+      <view class="weui-flex">
+        <view><image src="/images/notice.png"></image></view>
+        <view class="weui-flex__item" style='line-height:0.8rem;margin-top:5rpx;'>通知公告</view>
+      </view>
+    </view>
+    <view class="weui-flex__item notice_right">
+      <view>关于“党的十九大精神”学习考试通知</view>  
+      <view>加强法制教育，推进依法治国</view> 
+    </view>
+  </view> -->
+
+  <!-- 最近考试 -->
+  <view class='infor' style='margin-top:0;'>
+    <view class='title'>
+     - 最近考试信息 -
+    </view>
+    <view class='body' wx:if="{{examList.length != 0}}">
+      <view class='more' bindtap='goExam'>
+        更多 >>
+      </view>
+      <navigator url='/pages/exam/begin_exam/begin_exam?examId={{item.id}}' class='body_item' wx:for='{{examList}}' wx:key='{{value}}'>
+          {{item.title}}（{{item.publishTime}}）
+      </navigator>
+    </view>
+    <view class='body' wx:else>
+      <view class='body_item' style='margin-top: 38rpx;'>
+          暂时还没有考试信息！
+      </view>
+    </view>
+  </view>
+
+  <!-- 错题库 -->
+  <view class='infor'>
+    <view class='title'>
+     - 错题库 -
+    </view>
+    <view class='body' wx:if="{{(judgeCount + multipleCount + singleCount) != 0}}">
+      <view class='more' bindtap='goWrongQuestions'>
+        更多 >>
+      </view>
+      <view class='body_item' bindtap='goJudgeQuestions' wx:if="{{judgeCount != 0}}">
+        <image src="/images/icon/index_right.png"></image>
+        判断题 （ <text style='color:#E96151'>{{judgeCount}}</text> 个）
+      </view>
+      <view class='body_item' bindtap='goMultipleQuestions' wx:if="{{multipleCount != 0}}">
+        <image src="/images/icon/index_fang.png"></image>
+        多选题 （ <text style='color:#E96151'>{{multipleCount}}</text> 个）
+      </view>
+      <view class='body_item' bindtap='goSingleQuestions' wx:if="{{singleCount != 0}}">
+        <image src="/images/icon/index_circle.png"></image>
+        单选题 （ <text style='color:#E96151'>{{singleCount}}</text> 个）
+      </view>
+    </view>
+    <view class='body' wx:else>
+      <view class='body_item' style='margin-top: 38rpx;'>
+          恭喜您，暂时还没有错题！
+      </view>
+    </view>
+  </view>
+</view>

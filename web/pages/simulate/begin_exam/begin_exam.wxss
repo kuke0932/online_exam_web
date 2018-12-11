@@ -1,0 +1,13 @@
+/* pages/exam/begin_exam/begin_exam.wxss */
+.beginExam_container{
+  margin: 200rpx auto;
+  padding: 40rpx;
+  text-align: center
+}
+.tip{
+  text-align: left;
+  text-indent:2em;
+}
+.begin_btn{
+  margin: 60rpx 100rpx 0;
+}

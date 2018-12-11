@@ -1,0 +1,20 @@
+<view class='score_container' wx:if='{{list.length != 0}}'>
+  <navigator url='rank?examId={{item.examId}}' wx:for='{{list}}' wx:key='{{value}}'>
+    <view class='content'>
+      <view class='title'>
+        <image src="/images/icon/right.png"></image>
+        {{item.title}}
+      </view>
+      <view class="desc">{{item.desc}}</view>
+      <view class="weui-flex time">
+        <view class="weui-flex__item time_left">答题时间：{{item.answerTime}}</view>
+        <view class="weui-flex__item">分数/名次：<text style='font-size:24rpx;color:#e64340;font-weight:900'>{{item.score}}/{{item.rank}}</text></view>
+      </view>
+    </view> 
+  </navigator>
+</view>
+<view class='score_container' wx:else>
+  <view style='text-align: center'>
+  - 暂时还没有成绩，快去参加考试吧！-
+  </view>
+</view>

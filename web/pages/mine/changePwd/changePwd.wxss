@@ -1,0 +1,4 @@
+/* pages/mine/changePwd/changePwd.wxss */
+.btn_box{
+  margin: 100rpx;
+}

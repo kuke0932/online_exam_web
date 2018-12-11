@@ -1,0 +1,19 @@
+<view>
+  <view class="weui-panel weui-panel_access">
+    <view class="weui-panel__hd">
+      <view style='font-size:44rpx;color:#000;'>常见问题</view>
+    </view>
+    <view class="weui-panel__bd">
+      <navigator wx:for="{{questions}}" wx:key="index" url="{{item.url}}" class="weui-cell weui-cell_access" hover-class="weui-cell_active" style='padding:0'>
+        <view class="weui-media-box weui-media-box_text" style='padding:15px 0 15px 15px'>
+          <view style='font-size:16px;'>{{item.title}}</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <view class="page__bd" style='margin:40rpx;'>
+    <navigator url='../feedback/feedback'>
+      <button class="weui-btn">均不是，我要反馈</button>
+    </navigator>
+  </view>
+</view>

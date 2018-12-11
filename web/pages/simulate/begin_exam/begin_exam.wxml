@@ -1,0 +1,9 @@
+<view class="beginExam_container">
+  <view class='tip'>
+    您好， {{userName}}，本次考试共设有{{exam.judge}}道判断题，{{exam.singleChoice}}道单选题，{{exam.multipleChoice}}道多选题，每题一分，合计{{exam.total}}分，{{exam.total * 0.6}}分及格。
+    考试时长 {{exam.minutesLength}}分钟，自点击【开始考试】按钮起，{{exam.minutesLength}}分钟以后尚未做的题目会被直接判错，请留意考试时间！
+  </view>
+   <view class='begin_btn' bindtap='beginExam'> 
+    <button>开始考试</button>
+   </view>
+</view>

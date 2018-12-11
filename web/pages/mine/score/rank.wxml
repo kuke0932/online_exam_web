@@ -1,0 +1,15 @@
+<view class='rank_container'>
+  <view class='rankList'>
+    <view class="weui-flex rankItem" wx:for="{{rankList}}" wx:key='{{value}}' style='color: {{item.color}}'>
+      <view class="weui-flex__item name">
+        <view>{{item.sysUserName}}</view>
+      </view>
+      <view class="weui-flex__item score">
+        <view>{{item.totalScore}}分</view>
+      </view>
+      <view class="weui-flex__item rank">
+        <view>NO.<text class='number'>{{item.rank}}</text></view>
+      </view>
+    </view>
+  </view>
+</view>

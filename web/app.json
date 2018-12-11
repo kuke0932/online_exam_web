@@ -1,0 +1,71 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/exercise/exercise",
+    "pages/exercise/special/special",
+    "pages/exercise/random/random",
+    "pages/exercise/special/special_test",
+    "pages/simulate/simulate",
+    "pages/simulate/simulate_test/simulate_test",
+    "pages/simulate/begin_exam/begin_exam",
+    "pages/simulate/grade/grade",
+    "pages/exam/exam",
+    "pages/exam/begin_exam/begin_exam",
+    "pages/exam/exam_test/exam_test",
+    "pages/mine/mine",
+    "pages/mine/score/score",
+    "pages/mine/score/rank",
+    "pages/mine/changePwd/changePwd",
+    "pages/search/search",
+    "pages/mine/feedback/feedback",
+    "pages/mine/questions/questions",
+    "pages/mine/questions/details/details",
+    "pages/wrong/wrong_questions",
+    "pages/wrong/wrong"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1396F1",
+    "navigationBarTitleText": "在线学习考试系统",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#55B2F4",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/tabbar/home_sel.png",
+        "iconPath": "images/tabbar/home.png",
+        "pagePath": "pages/index/index",
+        "text": "主页"
+      },
+      {
+        "selectedIconPath": "images/tabbar/exer_sel.png",
+        "iconPath": "images/tabbar/exer.png",
+        "pagePath": "pages/exercise/exercise",
+        "text": "练习"
+      },
+      {
+        "selectedIconPath": "images/tabbar/simulate_sel.png",
+        "iconPath": "images/tabbar/simulate.png",
+        "pagePath": "pages/simulate/simulate",
+        "text": "模拟"
+      },
+      {
+        "selectedIconPath": "images/tabbar/exam_sel.png",
+        "iconPath": "images/tabbar/exam.png",
+        "pagePath": "pages/exam/exam",
+        "text": "考试"
+      },
+      {
+        "selectedIconPath": "images/tabbar/mine_sel.png",
+        "iconPath": "images/tabbar/mine.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  }
+}

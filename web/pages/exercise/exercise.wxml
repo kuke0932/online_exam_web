@@ -1,0 +1,11 @@
+<view class="exer_container">
+  <navigator url='special/special' open-type='navigateTo'>
+    <image class='img_icon' src="/images/special_exer.jpg"></image>
+  </navigator>
+  <navigator url='random/random'>
+    <image class='img_icon' src="/images/random_exer.jpg"></image>
+  </navigator>
+  <navigator url='/pages/wrong/wrong'>
+    <image class='img_icon' src="/images/wrong_exer.jpg"></image>
+  </navigator>
+</view>

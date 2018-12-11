@@ -1,0 +1,30 @@
+/* pages/exercise/special/special.wxss */
+.special_container{
+  padding:40rpx;
+  font-size: 32rpx;
+}
+.item{
+  padding:18rpx 10rpx 10rpx 10rpx;
+  border-bottom: 2rpx solid #8BB9EA;
+  line-height:41rpx;
+}
+.border{
+  border: 1rpx solid #8BB9EA;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 30rpx; 
+}
+.number{
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  margin:3rpx;
+  border-radius: 50%;
+  font-size: 24rpx;
+  color: #fff;
+  background-color: #1396F1;
+}
+.count{
+  float: right;
+}

@@ -1,0 +1,13 @@
+<view class='special_container'>
+  <view class="question_list">
+    <navigator url='special_test?categoryId={{item.id}}' class='item' wx:for="{{qesList}}" wx:key="{{value}}">
+      <view class='border'>
+        <view class='number'>
+          <text >{{index + 1}}</text>
+        </view>
+      </view>
+      <text class="title">{{item.name}}</text>
+      <text class="count">{{item.total}}题</text>
+    </navigator>
+  </view>
+</view>

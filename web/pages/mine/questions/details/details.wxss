@@ -1,0 +1,24 @@
+/* pages/mine/questions/details/details.wxss */
+.details_container{
+  text-align: center;
+  padding: 40rpx;
+  color: #666;
+}
+.search_exam{
+  background: #fff;
+}
+.text{
+  padding: 20rpx;
+  text-align: left;
+  font-size: 32rpx;
+}
+image{
+  width: 400rpx;
+  height: 714rpx;
+}
+.exam_info{
+  text-align: left;
+  background: #fff;
+  padding: 20rpx;
+  font-size: 32rpx;
+}
